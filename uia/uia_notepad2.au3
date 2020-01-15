@@ -166,7 +166,8 @@ Func Example()
   If Not IsObj( $oVal ) Then Return ConsoleWrite( "$oVal ERR" & @CRLF )
   ConsoleWrite( "$oVal OK" & @CRLF )
 
-  $oVal.SetValue("C:\Users\koyama\Downloads\はろーわーるど.txt")
+  ; 決まったディレクトリに保存したい場合は "C:\testdir\ハローワールド.txt" とする
+  $oVal.SetValue("はろーわーるど.txt")
   Sleep(100)
 
 
